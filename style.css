@@ -1,0 +1,79 @@
+:root{
+    --headFont: 'Kanit', sans-serif;
+    --navFont: 'Lilita One', sans-serif;
+
+    --bodyColor:#dcf0fa;
+    --headFontColor:#01495d;
+    --navFontColor:#005e78;
+}
+
+body{
+    background-color: var(--bodyColor);
+}
+
+.home{
+    width: auto;
+
+    padding: 1rem;
+}
+
+    .navSection{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+        .logo{
+            display: flex;
+
+            margin-left: 1rem;
+            align-items: center;
+        }
+
+            .logoText{
+                margin-left: 0.1rem;
+
+                color: var(--headFontColor);
+                font-family: var(--headFont);
+                font-size: 2rem;
+                font-weight:700;
+            }
+
+            .logoImg{
+                height: 4rem;
+
+            }
+    
+        .navBar{
+            display: flex;
+            align-items: center;
+            width: fit-content;
+        }
+        
+            .button{
+                margin: 0rem 0.5rem;
+                padding: 1rem;
+                font-family: var(--navFont);
+
+                color: var(--navFontColor);
+            }
+
+    .heroBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+        .heroContent{
+
+        }
+
+        .heroAvatar{
+            width: 20rem;
+
+            margin-right: 2rem;
+        }
+
