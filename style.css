@@ -1,79 +1,89 @@
 :root{
-    --headFont: 'Kanit', sans-serif;
-    --navFont: 'Lilita One', sans-serif;
+    --gradient: linear-gradient(45deg, white 0%, rgb(255, 138, 80) 40%, rgba(1,171,209,1) 100%);
+}
 
-    --bodyColor:#dcf0fa;
-    --headFontColor:#01495d;
-    --navFontColor:#005e78;
+html{
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
 }
 
 body{
-    background-color: var(--bodyColor);
+    background-color: black;
 }
 
-.home{
-    width: auto;
+.nav{
+    display: flex;
+    height: 4rem;
 
-    padding: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
-    .navSection{
-        display: flex;
-        justify-content: space-between;
-
+    .logo{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        font-family: 'MuseoModerno', sans-serif;
     }
 
-        .logo{
-            display: flex;
-
-            margin-left: 1rem;
-            align-items: center;
-        }
-
-            .logoText{
-                margin-left: 0.1rem;
-
-                color: var(--headFontColor);
-                font-family: var(--headFont);
-                font-size: 2rem;
-                font-weight:700;
-            }
-
-            .logoImg{
-                height: 4rem;
-
-            }
-    
-        .navBar{
-            display: flex;
-            align-items: center;
-            width: fit-content;
-        }
-        
-            .button{
-                margin: 0rem 0.5rem;
-                padding: 1rem;
-                font-family: var(--navFont);
-
-                color: var(--navFontColor);
-            }
-
-    .heroBox{
+    .navBar{
         display: flex;
-        justify-content: space-between;
+        width: 30rem;
+        justify-content: space-evenly;
         align-items: center;
-
-        padding: 1rem;
-        margin-top: 2rem;
+        color: white;
+        margin-left: 2rem;
     }
 
-        .heroContent{
+    .navBar .button{
+        font-family: 'JetBrains Mono', monospace;
+        background-color: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .navBar .button:hover{
+        background: rgb(244,97,23);
+        background: var(--gradient);
+        background-size: 700%;
+        background-repeat: repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        animation: smooth-text 0.4s ease-in-out forwards;
+    }
 
-        }
+.product{
+    position: relative;
+    width: 50rem;
+    margin: 0 auto;
+}
 
-        .heroAvatar{
-            width: 20rem;
+.product > img{
+    z-index: -1;
+    position: absolute;
+    width: 50rem;
+}
 
-            margin-right: 2rem;
-        }
 
+/* Animations */
+
+@keyframes smooth-text {
+    0% {
+        background-size: 700%;
+    }
+    20% {
+        background-size: 400%;
+    }
+    40%{
+        background-size: 200%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
