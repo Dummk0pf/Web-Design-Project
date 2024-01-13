@@ -1,36 +1,43 @@
 :root{
     --gradient: linear-gradient(45deg, white 0%, rgb(255, 138, 80) 40%, rgba(1,171,209,1) 100%);
+    --logoGradient: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(50,189,7,1) 20%, rgba(199,193,54,1) 40%, rgba(210,40,40,1) 60%, rgba(150,61,151,1) 80%, rgba(30,187,234,1) 100%);
+    --parFont: 'JetBrains Mono', monospace;
+    --headFont: 'Zilla Slab', serif;
+    --logoFont: 'MuseoModerno', sans-serif;
 }
 
 body{
     background-color: black;
-    overflow: hidden;
 }
 
 h1{
     color: white;
-    font-family: 'Zilla Slab', serif;
+    font-family: var(--headFont);
 }
 
 p,a{
     color: white;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--parFont);
 }
 
 .nav{
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     height: 4rem;
 
-    margin-top: 1rem;
+    padding-top: 1rem;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 
     .logo > h1{
         font-size: 2rem;
         color: white;
         margin-left: 2rem;
-        font-family: 'MuseoModerno', sans-serif;
+        font-family: var(--logoFont);
     }
 
     .navBar{
@@ -57,24 +64,116 @@ p,a{
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
         animation: smooth-text 0.4s ease-in-out forwards;
     }
 
 
 .about-section{
     display: flex;
-    flex-direction: row-reverse;
-    width: 80rem;
-    margin-top: 4rem;
+    width: 100%;
+    height: 90vh;
 }
 
-    .about-section-img > img{
-        margin-right: 4rem;
-        width: 30rem;
+/* Section 1 */
+
+    .content{
+        display: flex;
+        margin: 3rem auto 0rem auto;
+        align-items: center
     }
 
+    .logo-text{
+        margin-top: 10rem;
+        transform: rotate(-90deg) translateX(50%) translateY(50%);
+        background: rgb(244,97,23);
+        background: var(--logoGradient);
+        background-size: 700%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: smooth-text 3s ease-in-out forwards;
+    }
+    
+    .logo-text > h1{
+        width: fit-content;
+        font-size: 8rem;
+        font-family: var(--logoFont);
+    }
+    
+    .content > p{
+        width: 30rem;
+        font-size: 1.4rem;
+        font-style: italic;
+    }
 
+/* Section 2 */
+
+    /* overriding margin */
+    .content{
+        margin: 0rem auto;
+    }
+
+    .steve-wozniak{
+        margin: 0rem auto;
+    }
+    
+    .steve-wozniak > img{
+        width: 25rem;
+        border-radius: 50%;
+        
+        box-shadow: 0rem 0rem 1rem white;
+    }
+
+    .about-steve > h1{
+        margin: 3rem;
+        font-size: 4rem;
+        background: rgb(244,97,23);
+        background: var(--logoGradient);
+        background-size: 100%;
+        background-repeat: repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .about-steve > p{
+        width: 30rem;
+        margin: 3rem;
+        font-size: 1.2rem;
+    }
+
+/* Section 3 */
+
+    .motto-img > img{
+        width: 30rem;
+        border-radius: 10rem;
+    }
+
+    .motto-text{
+        margin: 3rem 3rem 3rem -3rem;
+        border-radius: 5rem;
+        border-width: 0.05rem;
+        border-style: solid;
+        border-color: white;
+        background-color: black;
+    }
+
+    .motto-text > h1{
+        margin: 3rem 3rem 3rem 3rem;
+        font-size: 4rem;
+        background: rgb(244,97,23);
+        background: var(--logoGradient);
+        background-size: 50%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .motto-text > p{
+        width: 30rem;
+        margin: 3rem 3rem 3rem 3rem;
+        font-size: 1.2rem;
+    }
 /* Animations */
 
 @keyframes smooth-text {
