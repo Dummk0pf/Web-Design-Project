@@ -144,7 +144,6 @@ p,a{
 /* Overview Section  */
 
 .section-overview{
-    display: none;
     width: 60rem;
     margin: 0 auto;
     text-align: center; 
@@ -206,7 +205,6 @@ p,a{
 /* Specs Section */
 
 .section-specs{
-    display: none;
     width: 60rem;
     margin: 0 auto;
     text-align: center; 
@@ -289,6 +287,10 @@ p,a{
         padding: 1rem;
         text-align: left;
     }
+
+.hide{
+    display: none;
+}
 
 @keyframes smooth-text {
     0% {
