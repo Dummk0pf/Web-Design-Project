@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="marketPlace_style.css">
+
+    <script defer src="marketPlace.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <h1>Woz</h1>
+        </div>
+
+        <div class="navBar">
+            <div class="button"><a href="index.html">Home</a></div>
+            <div class="button"><a href="about.html">About</a></div>
+            <div class="button"><a href="marketPlace.html">MarketPlace</a></div>
+            <div class="button"><a href="#">Products</a></div>
+            <div class="button"><a href="#">Contact</a></div>
+        </div>
+    </div>
+
+    <div class="card-box" id="card-box">
+        <div class="card card-active" id="card-1">
+            <img src="res/marketPlace/BlueBox13/Bluebox13.jpg" alt="BlueBox 13 Laptop Image" srcset="">
+            <p>Woz BlueBox 13</p>
+        </div>
+
+        <div class="card" id="card-2">
+            <img src="res/marketPlace/BlueBox16/Bluebox16.jpg" alt="BlueBox 16 Laptop Image" srcset="">
+            <p>Woz BlueBox 16</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-nav" id="section-nav">
+            <div id="section-highlight"></div>
+            <p class="section-button section-button-active" id="overview">Overview</p>
+        
+            <p class="section-button " id="specs">Specs</p>
+            <p class="section-button " id="modules">Modules</p>
+        </div>
+
+        <div class="section-overview" id="section-overview">
+            <h1 class="section-overview-title">Woz BlueBox 16</h1>
+            <h1 class="section-overview-subtitle">Powered by AMD Ryzen™ 7040HS and Radeon™ RX 7700S</h1>
+
+            <div class="section-overview-content">
+                <img src="res/marketPlace/BlueBox16/upgradableGraphics.gif" alt="laptop with upgradable graphics">
+                <div class="content">
+                    <h1>Upgradeable, modular graphics</h1>
+                    <p>A high-performance laptop with upgradeable, modular, latest-generation graphics. Swap and upgrade peripherals independently of the rest of the laptop, including generation over generation discrete GPUs. The AMD Radeon™ RX 7700S Graphics Module with 8GB of GDDR6 enables intense gaming and creativity applications. If you want a thinner and lighter system, you can switch to an Expansion Bay Shell and use the impressive integrated graphics capabilities of Ryzen 7040 Series.</p>
+                </div>
+            </div>
+
+            <div class="section-overview-content">
+                <img src="res/marketPlace/BlueBox16/inputCustom.gif" alt="laptop with upgradable graphics">
+                <div class="content">
+                    <h1>Fully customizable input</h1>
+                    <p>Numpad or no numpad? The choice is yours. With hot-swappable Input Modules, you can center or offset your selected keyboard, as well as choose between a Numpad, RGB Macropad, Spacers in a range of colors, or LED Matrix Modules. The Input Modules perform well too, with NKRO, open source QMK firmware, 1.5mm key travel and both white backlit and per-key RGB keyboard options. We've opened the Input Module system up to developers, enabling an entire world of custom input options beyond what we've created.</p>
+                </div>
+            </div>
+
+            <div class="section-overview-content">
+                <img src="res/marketPlace/BlueBox16/ports.jpg" alt="laptop with upgradable graphics">
+                <div class="content">
+                    <h1>Choose your ports</h1>
+                    <p>External adapters are a thing of the past. The Framework Expansion Card system lets you choose exactly the ports you want and where you want them. With six slots, you can select from USB-C, USB-A, HDMI, DisplayPort, MicroSD, Ethernet, Audio, ultra fast storage, and more. You can charge through either side of the machine too, with support for up to 240W USB-C power adapters.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

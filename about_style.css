@@ -1,6 +1,7 @@
 :root{
-    --gradient: linear-gradient(45deg, white 0%, rgb(255, 138, 80) 40%, rgba(1,171,209,1) 100%);
-    --logoGradient: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(50,189,7,1) 20%, rgba(199,193,54,1) 40%, rgba(210,40,40,1) 60%, rgba(150,61,151,1) 80%, rgba(30,187,234,1) 100%);
+    --gradient: linear-gradient(45deg, white 0%, rgb(255, 138, 80) 40%, rgb(1, 171, 209) 100%);
+    --logoGradient: linear-gradient(45deg, #ffffff 0%, #32bd07 20%, #c7c136 40%, #d22828 60%, #963d97 80%, #1ebbea 100%);
+    --textGradient: linear-gradient(71deg, rgba(199,193,54,1) 4%, rgba(210,40,40,1) 38%, rgba(175,52,105,1) 75%, rgba(175,52,105,1) 75%, rgba(30,187,234,1) 100%);;
     --parFont: 'JetBrains Mono', monospace;
     --headFont: 'Zilla Slab', serif;
     --logoFont: 'MuseoModerno', sans-serif;
@@ -78,12 +79,17 @@ p,a{
 
     .content{
         display: flex;
+        align-items: center;
+    }
+
+    .content-1{
         margin: 3rem auto 0rem auto;
-        align-items: center
+        width: 50rem;
     }
 
     .logo-text{
         margin-top: 10rem;
+        margin-left: -5rem;
         transform: rotate(-90deg) translateX(50%) translateY(50%);
         background: rgb(244,97,23);
         background: var(--logoGradient);
@@ -91,7 +97,7 @@ p,a{
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: smooth-text 3s ease-in-out forwards;
+        animation: smooth-text 1s ease-in-out forwards;
     }
     
     .logo-text > h1{
@@ -102,6 +108,7 @@ p,a{
     
     .content > p{
         width: 30rem;
+        margin: 0rem 0rem 0rem 3rem;
         font-size: 1.4rem;
         font-style: italic;
     }
@@ -109,7 +116,7 @@ p,a{
 /* Section 2 */
 
     /* overriding margin */
-    .content{
+    .content-2{
         margin: 0rem auto;
     }
 
@@ -128,7 +135,7 @@ p,a{
         margin: 3rem;
         font-size: 4rem;
         background: rgb(244,97,23);
-        background: var(--logoGradient);
+        background: var(--textGradient);
         background-size: 100%;
         background-repeat: repeat;
         background-clip: text;
@@ -143,6 +150,10 @@ p,a{
     }
 
 /* Section 3 */
+
+    .content-3{
+        margin: 0 auto;
+    }
 
     .motto-img > img{
         width: 30rem;
@@ -162,8 +173,8 @@ p,a{
         margin: 3rem 3rem 3rem 3rem;
         font-size: 4rem;
         background: rgb(244,97,23);
-        background: var(--logoGradient);
-        background-size: 50%;
+        background: var(--textGradient);
+        background-size: 60%;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
