@@ -67,9 +67,9 @@ const selectNavSection =  function(event){
     element.classList.toggle("section-button-active");
 
     currentSectionNav = element;
-    // currentSectionNav.scrollIntoView({
-    //     behavior: "smooth"
-    // });
+    currentSectionNav.scrollIntoView({
+        behavior: "smooth"
+    });
     
     if(currentSectionNav.id === ("overview")){
         highlightBox.style.transform = "translateX(0%)";
