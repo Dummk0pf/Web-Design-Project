@@ -169,6 +169,29 @@ input{
             text-decoration: underline;
         }
 
+.wrong-credentials{
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    inset: 7rem 0 auto 0;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: rgb(250, 102, 102);
+    border: 0.2rem red solid;
+}
+
+    .wrong-credentials-close-button{
+        margin-left: 0.5rem;
+        width: 1.5rem;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .hide-button{
+        display: none;
+    }
 
 @keyframes smooth-text {
     0% {
