@@ -1,0 +1,201 @@
+:root{
+    --gradient: linear-gradient(45deg, white 0%, rgb(255, 138, 80) 40%, rgb(1, 171, 209) 100%);
+    --logoGradient: linear-gradient(45deg, #ffffff 0%, #32bd07 20%, #c7c136 40%, #d22828 60%, #963d97 80%, #1ebbea 100%);
+    --textGradient: linear-gradient(71deg, rgba(199,193,54,1) 4%, rgba(210,40,40,1) 38%, rgba(175,52,105,1) 75%, rgba(175,52,105,1) 75%, rgba(30,187,234,1) 100%);;
+    --buyGradient: linear-gradient(90deg, rgba(69,25,82,1) 0%, rgba(128,13,76,1) 30%, rgba(249,32,77,1) 60%, rgba(255,115,0,1) 100%);
+
+    --parFont: 'JetBrains Mono', monospace;
+    --headFont: 'Zilla Slab', serif;
+    --logoFont: 'MuseoModerno', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    font-family: var(--headFont);
+}
+
+p,a{
+    color: white;
+    font-family: var(--parFont);
+}
+
+.nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 4rem;
+
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+    .logo > h1{
+        font-size: 2rem;
+        color: white;
+        margin-left: 2rem;
+        font-family: var(--logoFont);
+    }
+
+    .navBar{
+        display: flex;
+        width: 40rem;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        margin-left: 2rem;
+    }
+
+    .navBar .button{
+        background-color: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .navBar .button img{
+        filter: invert(1);
+        width: 2rem;
+    }
+    
+    .navBar .button:hover{
+        background: rgb(244,97,23);
+        background: var(--gradient);
+        background-size: 700%;
+        background-repeat: repeat;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: smooth-text 0.4s ease-in-out forwards;
+    }
+
+/* item filter */
+
+.item-filter{
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    margin: 1rem auto;
+    background-color: rgba(255, 255, 255, 0.203);
+}
+
+    .sortby-general, .sortby-categories, .price-filter, .availablity-filter{
+        width: 20%;
+        height: fit-content;
+        background-color: black;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .sortby-general > h1, .sortby-categories > h1, .price-filter > h1, .availablity-filter > h1{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .radio-item{
+        display: block;
+        padding: 0.2rem;
+    }
+
+    .radio-button{
+        margin: 0;
+        border:2px solid white;
+        appearance:none;
+        border-radius:50%;
+        width:12px;
+        height:12px;
+        background-color:white;
+        transition:background-color ease-in 0.2s;
+
+        cursor: pointer;
+    }
+
+    .radio-button:checked{
+        background-color: black;
+    }
+
+    .input-range-box{
+        padding: 0.3rem;
+        text-align: center;
+    }
+
+    .input-range-box > p{
+        margin: 1rem;
+    }
+
+    .input-range{
+        display: block;
+        margin: 0 auto;
+        accent-color: white;
+        width: 10rem;
+    }
+
+.items-grid{
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.203);;
+    margin: 0 auto;
+    padding: 0.01rem;
+}
+
+    .grid-title{
+        width: fit-content;
+        font-size: 2rem;
+        margin: 1rem 0rem 0rem 1.5rem;
+    }
+
+    .item-row{
+        width: fit-content;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .item{
+        width: 15rem;
+        height: 23rem;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: black;
+        border-radius: 1rem;
+    }
+
+    .item-image{
+        width: 15rem;
+        height: 16rem;
+        border-radius: 0.5rem;
+    }
+
+    .item-image > img{
+        width: 15rem;
+    }
+
+    .item-title{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+
+
+
+/* Animations */
+
+@keyframes smooth-text {
+    0% {
+        background-size: 700%;
+    }
+    20% {
+        background-size: 400%;
+    }
+    40%{
+        background-size: 200%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
