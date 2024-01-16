@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="user_Account_style.css">
+
+    <script defer src="user_Account.js"></script>
 </head>
 <body>
     <div class="nav">
@@ -32,13 +34,33 @@
     </div>
 
     <div class="signin">
-        <div class="sigin-image">
+        <div class="signin-image">
             <img src="res/user/signin.svg" alt="signin-image">
         </div>
         <div class="signin-box">
-            <h1>Sign In</h1>
-            
+            <h1 class="signin-title">Sign In</h1>
+            <div class="signin-content">
+                <p>Email</p>
+                <p><input type="email" name="user-email" id="user-email"></p>
+                <p>Password</p>
+                <p><input type="password" name="user-password" id="user-password"></p>
+            </div>
+            <div class="signin-button" id="signin-button">
+                <p>Sign In</p>
+            </div>
+            <div class="signin-google-button">
+                <img class="signin-google-icon" src="res/user/google.png" alt="">
+                <p>Continue with Google</p>
+            </div>
+            <div class="signup-section">
+                <p>Don't have an account?</p>
+                <p><a href="signup.html">Create an account</a></p>
+            </div>
         </div>
+    </div>
+
+    <div class="wrong-credentials">
+
     </div>
 </body>
 </html>

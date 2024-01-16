@@ -23,6 +23,10 @@ p,a{
     font-family: var(--parFont);
 }
 
+input{
+    font-family: var(--parFont);
+}
+
 .nav{
     display: flex;
     position: sticky;
@@ -75,6 +79,95 @@ p,a{
         animation: smooth-text 0.4s ease-in-out forwards;
     }
 
+/* Sign In */
+
+.signin{
+    display: flex;
+    width: fit-content;
+    margin: 1rem auto 0rem auto;
+    padding: 1rem;
+    background-color: rgb(113, 113, 113);
+}
+    
+    .signin-box{
+        width: 25rem;
+        background-color: rgba(8, 8, 8, 0.799);
+    }
+    
+    .signin-image{
+        width: 30rem;
+    }
+
+    .signin-title{
+        width: fit-content;
+        margin: 3rem auto 1rem auto;
+        font-size: 2rem
+    }
+
+    .signin-content{
+        width: fit-content;
+        margin: 1rem auto;
+    }
+
+    .signin-content > p{
+        padding: 0.2rem;
+    }
+
+    .signin-content input{
+        width: 20rem;
+        height: 1.5rem;
+        border: none;
+        border-radius: 1%;
+    }
+
+    .signin-button{
+        width: 15rem;
+        height: 1rem;
+        padding: 1rem;
+        margin: 0 auto;
+        background-color: white;
+        text-align: center;
+        border-radius: 10rem;
+        cursor: pointer;
+    }
+
+        .signin-button > p{
+            color: black;
+        }
+    
+    .signin-google-button{
+        width: fit-content;
+        margin: 1rem auto;
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 10rem;
+
+        cursor: pointer;
+    }
+    
+        .signin-google-icon{
+            width: 3rem;
+        }
+    
+        .signin-google-button > p{
+            color: black;
+            margin: 0rem 1rem 0rem 1rem;
+        }
+
+    .signup-section{
+        width: 20rem;
+        margin: 2rem auto;
+    }
+
+        .signup-section > p{
+            margin: 1rem auto;
+        }
+
+        .signup-section a{
+            text-decoration: underline;
+        }
 
 
 @keyframes smooth-text {
