@@ -136,7 +136,7 @@ p,a{
         width: 10rem;
     }
 
-.items-grid{
+/* .items-grid{
     width: 75%;
     background-color: rgba(255, 255, 255, 0.203);;
     margin: 0 auto;
@@ -178,9 +178,59 @@ p,a{
     .item-title{
         font-size: 1.4rem;
         padding: 1rem;
+    } */
+
+.items-grid{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.203);;
+    margin: 0 auto;
+    padding: 0.01rem;
+}
+
+    .laptops-grid{
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(23rem, auto);
+        gap: 1rem;
     }
 
+    .grid-title{
+        width: fit-content;
+        font-size: 2rem;
+        margin: 1rem 0rem 0rem 1.5rem;
+    }
 
+    .item{
+        min-height: 25rem;
+        box-sizing: border-box;
+        padding: 2rem;
+        background-color: black;
+        border-radius: 1rem;
+
+        cursor: pointer;
+    }
+
+    .item-image{
+        width: 15rem;
+        height: 16rem;
+        border-radius: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .item-image > img{
+        width: 15rem;
+    }
+
+    .item-content{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .item-title{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
 
 
 /* Animations */

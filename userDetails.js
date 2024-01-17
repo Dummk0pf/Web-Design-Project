@@ -1,3 +1,6 @@
 "use strict";
 
-let 
+let currentUserEmail;
+let currentPassword;
+
+let cartItems = [];

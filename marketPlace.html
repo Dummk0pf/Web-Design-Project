@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="marketPlace_style.css">
+
+    <script defer src="marketPlace.js"></script>
 </head>
 <body>
     <div class="nav">
@@ -71,7 +73,7 @@
             <div class="input-range-box">
                 <p>Price Range</p>
                 <input type="range" name="" id="input-range" class="input-range">
-                <pre style="color: white; font-family: 'JetBrains Mono', monospace;"> 0            150000</pre>
+                <pre style="color: white; font-family: 'JetBrains Mono', monospace;"> 0             1699</pre>
             </div>  
             
         </div>
@@ -92,37 +94,35 @@
     </div>
 
     <div class="items-grid">
-        <div class="laptops-grid">
-            <h1 class="grid-title">Laptops</h1>
-            <div class="item-row" id="items-row-1">
-                <div class="item" id="item-1">
-                    <div class="item-image">
-                        <img src="res/marketPlace/BlueBox13_12thgen.jpeg" class="item-image" alt="" srcset="">
-                    </div>
-                    <div class="item-content">
-                        <h1 class="item-title">Woz BlueBox 13 (Configure)</h1>
-                        <p class="item-desc">Starting at $999</p>
-                    </div>
+        <h1 class="grid-title">Laptops</h1>
+        <div class="laptops-grid" id="laptops-grid">
+            <!-- <div class="item" id="item-1">
+                <div class="item-image">
+                    <img src="res/marketPlace/BlueBox13_12thgen.jpeg" class="item-image" alt="" srcset="">
                 </div>
-                <div class="item" id="item-2">
-                    <div class="item-image">
-                        <img src="res/marketPlace/BlueBox16_ryzen7.jpeg" class="item-image" alt="" srcset="">
-                    </div>
-                    <div class="item-content">
-                        <h1 class="item-title">Woz BlueBox 16 (Configure)</h1>
-                        <p class="item-desc">Starting at $1499</p>
-                    </div>
+                <div class="item-content">
+                    <h1 class="item-title">Woz BlueBox 13 (Configure)</h1>
+                    <p class="item-desc">Starting at $999</p>
                 </div>
-                <!-- <div class="item" id="item-3">
-                    <div class="item-image">
-                        <img src="res/marketPlace/Bluebox16_ryzen9.jpg" class="item-image" alt="" srcset="">
-                    </div>
-                    <div class="item-content">
-                        <h1 class="item-title">Woz BlueBox 16 (Ryzen 9)</h1>
-                        <p class="item-desc">Starting at $1599</p>
-                    </div>
-                </div> -->
             </div>
+            <div class="item" id="item-2">
+                <div class="item-image">
+                    <img src="res/marketPlace/BlueBox16_ryzen7.jpeg" class="item-image" alt="" srcset="">
+                </div>
+                <div class="item-content">
+                    <h1 class="item-title">Woz BlueBox 16 (Configure)</h1>
+                    <p class="item-desc">Starting at $1499</p>
+                </div>
+            </div>
+            <div class="item" id="item-3">
+                <div class="item-image">
+                    <img src="res/marketPlace/Bluebox16_ryzen9.jpg" class="item-image" alt="" srcset="">
+                </div>
+                <div class="item-content">
+                    <h1 class="item-title">Woz BlueBox 16 (Ryzen 9)</h1>
+                    <p class="item-desc">Starting at $1599</p>
+                </div>
+            </div> -->
         </div>
     </div>
 </body>
