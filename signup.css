@@ -81,7 +81,7 @@ input{
 
 /* Sign In */
 
-.signin{
+.signup{
     display: flex;
     width: fit-content;
     margin: 1rem auto 0rem auto;
@@ -89,38 +89,45 @@ input{
     background-color: rgb(113, 113, 113);
 }
     
-    .signin-box{
+    .signup-box{
         width: 25rem;
         background-color: rgba(8, 8, 8, 0.799);
+        padding-bottom: 1rem;
     }
     
-    .signin-image{
+    .signup-image{
         width: 30rem;
+        padding: 5rem;
+        box-sizing: border-box;
     }
 
-    .signin-title{
+    .signup-image > img{
+        width: 20rem;
+    }
+
+    .signup-title{
         width: fit-content;
         margin: 3rem auto 1rem auto;
         font-size: 2rem
     }
 
-    .signin-content{
+    .signup-content{
         width: fit-content;
         margin: 1rem auto;
     }
 
-    .signin-content > p{
+    .signup-content > p{
         padding: 0.2rem;
     }
 
-    .signin-content input{
+    .signup-content input{
         width: 20rem;
         height: 1.5rem;
         border: none;
         border-radius: 1%;
     }
 
-    .signin-button{
+    .signup-button{
         width: 15rem;
         height: 1rem;
         padding: 1rem;
@@ -131,11 +138,11 @@ input{
         cursor: pointer;
     }
 
-        .signin-button > p{
+        .signup-button > p{
             color: black;
         }
     
-    .signin-google-button{
+    .google-button{
         width: fit-content;
         margin: 1rem auto;
         padding: 0.2rem;
@@ -147,11 +154,11 @@ input{
         cursor: pointer;
     }
     
-        .signin-google-icon{
+        .google-icon{
             width: 3rem;
         }
     
-        .signin-google-button > p{
+        .google-button > p{
             color: black;
             margin: 0rem 1rem 0rem 1rem;
         }
@@ -178,20 +185,25 @@ input{
     inset: 7rem 0 auto 0;
     margin: 0 auto;
     padding: 0.5rem;
-    background-color: rgb(250, 102, 102);
-    border: 0.2rem red solid;
+    background-color: black;
+    border: 0.05rem white solid;
+    border-radius: 0.2rem;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
     .wrong-credentials-close-button{
         margin-left: 0.5rem;
         width: 1.5rem;
-        background-color: white;
         cursor: pointer;
+        background-color: red;
+        border-radius: 50%;
+
     }
 
-    .hide-button{
+    .hide{
         display: none;
-    }
+    } 
 
 @keyframes smooth-text {
     0% {
