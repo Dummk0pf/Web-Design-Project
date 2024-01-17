@@ -204,11 +204,15 @@ p,a{
     .item{
         min-height: 25rem;
         box-sizing: border-box;
-        padding: 2rem;
+        padding: 2rem 1rem 2rem 1rem;
         background-color: black;
         border-radius: 1rem;
 
         cursor: pointer;
+    }
+
+    .item:hover{
+        outline: 0.1rem rgba(255, 255, 255, 0.497) solid;
     }
 
     .item-image{
@@ -228,10 +232,26 @@ p,a{
     }
 
     .item-title{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 1rem;
     }
 
+    .item-desc{
+        font-size: 0.8rem;
+        margin: 0.5rem auto;
+    }
+
+    .configure-button{
+        width: fit-content;
+        padding: 0.6rem;
+        border-radius: 2rem;
+        background-color: white;
+        color: black;
+    }
+
+    .configure-button:hover{
+        text-decoration: underline;
+    }
 
 /* Animations */
 

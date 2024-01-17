@@ -1,7 +1,4 @@
-"use strict";
-
-let laptops = [];
-let expansioncards = [];
+"use strict";   
 
 // Elements
 
@@ -18,12 +15,21 @@ const initializeLaptopGrid = function(){
             </div>
             <div class="item-content">
                 <h1 class="item-title">${laptop.modelName}</h1>
-                <p class="item-desc">Starting at $${laptop.dollarPrice}</p>
+                <p class="item-desc">Starting at $${laptop.dollarPrice} <a class="configure-button" id="c-${laptop.id}" href="configure.html">Configure -></a></p>
             </div>
         </div>
         `;    
         laptopGrid.insertAdjacentHTML("beforeend", html);
-    })
+    });
+
+    const lItems = document.querySelectorAll(".laptop-item");
+
+    lItems.forEach(item => {
+        item.addEventListener("click", function(event){
+            currentProductId = item.id;
+            console.log(currentProductId);
+        })
+    });
 }
 
 // For now this simulates JSON data from server
@@ -31,13 +37,13 @@ const getLaptops = function(){
     return [
         {
             id: "lap-1",
-            modelName: "Woz BlueBox 13 (Configure)",
+            modelName: "Woz BlueBox 13",
             dollarPrice: 999,
             image: "res/marketPlace/BlueBox13_12thgen.jpeg"
         },
         {
             id: "lap-2",
-            modelName: "Woz BlueBox 16 (Configure)",
+            modelName: "Woz BlueBox 16",
             dollarPrice: 999,
             image: "res/marketPlace/BlueBox16_ryzen7.jpeg"
         },
