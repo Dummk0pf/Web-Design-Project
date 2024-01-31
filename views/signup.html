@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css-../reset.css" />
+    <link rel="stylesheet" href="signup.css" />
+
+    <script defer src="userDetails.js"></script>
+    <script defer src="signup.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <h1>Woz</h1>
+      </div>
+
+      <div class="navBar">
+        <div class="button"><a href="index.html">Home</a></div>
+        <div class="button"><a href="about.html">About</a></div>
+        <div class="button"><a href="marketPlace.html">MarketPlace</a></div>
+        <div class="button"><a href="products.html">Products</a></div>
+        <div class="button">
+          <a href="signin.html"
+            ><img
+              src="../res/marketPlace/avatar.svg"
+              alt="account-picture"
+              srcset=""
+          /></a>
+        </div>
+        <div class="button">
+          <a href="#"
+            ><img src="../res/marketPlace/cart.svg" alt="shopping-cart picture"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="signup">
+      <div class="signup-image">
+        <img src="../res/user/signup.svg" alt="signup-image" />
+      </div>
+      <div class="signup-box">
+        <h1 class="signup-title">Sign Up</h1>
+        <div class="signup-content">
+          <p>Full Name</p>
+          <p>
+            <input type="text" name="signup-user-name" id="signup-user-name" />
+          </p>
+          <p>Email</p>
+          <p>
+            <input
+              type="email"
+              name="signup-user-email"
+              id="signup-user-email"
+            />
+          </p>
+          <p>Password</p>
+          <p>
+            <input
+              type="password"
+              name="signup-user-password"
+              id="signup-user-password"
+            />
+          </p>
+          <p>Retype Password</p>
+          <p>
+            <input
+              type="password"
+              name="signup-user-repassword"
+              id="signup-user-repassword"
+            />
+          </p>
+        </div>
+        <div class="signup-button" id="signup-button">
+          <p>Sign Up</p>
+        </div>
+        <div class="google-button">
+          <img class="google-icon" src="../res/user/google.png" alt="" />
+          <p>Continue with Google</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrong-credentials hide" id="wrong-credentials">
+      <!-- Insert the error statement -->
+      <img
+        class="wrong-credentials-close-button"
+        id="wrong-credentials-close-button"
+        src="../res/user/close.png"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

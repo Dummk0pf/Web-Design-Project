@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configure</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="configure.css" />
+
+    <script defer src="configureInterface.js"></script>
+    <script defer src="configure.js"></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <h1>Woz</h1>
+      </div>
+
+      <a href="marketPlace.html">
+        <p class="back-button"><- Back to MarketPlace</p>
+      </a>
+    </div>
+
+    <div class="configure-image" id="configure-image">
+      <img src="../res/configure/cpu.jpeg" alt="woz 16 laptop" srcset="" />
+      <!-- <video
+        controls
+        loop
+        autoplay
+        src="../res/configure/primarystorage.mp4"
+      ></video> -->
+    </div>
+    <div class="configure-box">
+      <div class="configure-content">
+        <h1 class="configure-content-title">Configuration</h1>
+        <div class="configure-subcontent system" id="system">
+          <h1>System</h1>
+          <hr />
+          <div class="choice">
+            <input type="radio" name="choice-system" id="choice-system-1" />
+            <label for="choice-system-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>Ryzen 7 7840HS</p>
+                <p>$ 1399</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>Ryzen™ 7 7840HS</p>
+                <p>Up to 5.1GHz</p>
+                <p>8-core/16-thread</p>
+                <p>24MB Cache</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice-system" id="choice-system-2" />
+            <label for="choice-system-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>Ryzen 7 7840HS</p>
+                <p>$ 1399</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>Ryzen™ 7 7840HS</p>
+                <p>Up to 5.1GHz</p>
+                <p>8-core/16-thread</p>
+                <p>24MB Cache</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="configure-subcontent memory" id="memory">
+          <h1>Memory</h1>
+          <hr />
+          <div class="choice">
+            <input type="radio" name="choice-memory" id="choice-memory-1" />
+            <label for="choice-memory-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>DDR5-5600-8GB</p>
+                <p>$ 40</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>(1 x 8GB)</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice-memory" id="choice-memory-2" />
+            <label for="choice-memory-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>DDR5-5600-16GB</p>
+                <p>$ 80</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>(2 x 8GB)</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice-memory" id="choice-memory-3" />
+            <label for="choice-memory-3" class="choice-content">
+              <div class="choice-content-title">
+                <p>DDR5-5600-16GB</p>
+                <p>$ 80</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>(1 x 16GB)</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice-memory" id="choice-memory-4" />
+            <label for="choice-memory-4" class="choice-content">
+              <div class="choice-content-title">
+                <p>DDR5-5600-32GB</p>
+                <p>$ 160</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>(2 x 16GB)</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice-memory" id="choice-memory-5" />
+            <label for="choice-memory-5" class="choice-content">
+              <div class="choice-content-title">
+                <p>DDR5-5600-32GB</p>
+                <p>$ 160</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>(1 x 32GB)</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="configure-subcontent primary-storage" id="primary-storage">
+          <h1>Primary Storage</h1>
+          <hr />
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-primary-storage"
+              id="choice-primary-storage-1"
+            />
+            <label for="choice-primary-storage-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>WD_BLACK™ SN770 NVMe™</p>
+                <p>$ 39</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>M.2 2280 - 250GB</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-primary-storage"
+              id="choice-primary-storage-2"
+            />
+            <label for="choice-primary-storage-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>WD_BLACK™ SN770 NVMe™</p>
+                <p>$ 69</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>M.2 2280 - 500GB</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-primary-storage"
+              id="choice-primary-storage-3"
+            />
+            <label for="choice-primary-storage-3" class="choice-content">
+              <div class="choice-content-title">
+                <p>WD_BLACK™ SN770 NVMe™</p>
+                <p>$ 99</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>M.2 2280 - 1TB</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-primary-storage"
+              id="choice-primary-storage-4"
+            />
+            <label for="choice-primary-storage-4" class="choice-content">
+              <div class="choice-content-title">
+                <p>WD_BLACK™ SN770 NVMe™</p>
+                <p>$ 199</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>M.2 2280 - 2TB</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div
+          class="configure-subcontent secondary-storage"
+          id="secondary-storage"
+        >
+          <h1>Secondary Storage</h1>
+          <hr />
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-secondary-storage"
+              id="choice-secondary-storage-1"
+            />
+            <label for="choice-secondary-storage-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>WD_BLACK™ SN770M NVMe™</p>
+                <p>$ 99</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>M.2 2230 - 500GB</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-secondary-storage"
+              id="choice-secondary-storage-2"
+            />
+            <label for="choice-secondary-storage-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>WD_BLACK™ SN740 NVMe™</p>
+                <p>$ 69</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>M.2 2230 - 2TB</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div
+          class="configure-subcontent operating-system"
+          id="operating-system"
+        >
+          <h1>Operating System</h1>
+          <hr />
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-operating-system"
+              id="choice-operating-system-1"
+            />
+            <label for="choice-operating-system-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>Windows 11 Home</p>
+                <p>$ 139</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-operating-system"
+              id="choice-operating-system-2"
+            />
+            <label for="choice-operating-system-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>Windows 11 Pro</p>
+                <p>$ 199</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="configure-content">
+        <h1 class="configure-content-title">Customization</h1>
+        <div class="configure-subcontent input-modules" id="input-modules">
+          <h1>Input Modules</h1>
+          <hr />
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-input-modules"
+              id="choice-input-modules-1"
+            />
+            <label for="choice-input-modules-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>2x Spacer Modules</p>
+                <p>$ 10</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>
+                  Spacers can be laid out in a number of ways (Both left, Both
+                  right, Left & Right) and are easily swapped.
+                </p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-input-modules"
+              id="choice-input-modules-2"
+            />
+            <label for="choice-input-modules-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>Numpad Module</p>
+                <p>$ 19</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>
+                  Black keys with a togglable white backlight. 1.5 mm key travel
+                  and NKRO support. Runs QMK firmware, enabling you to configure
+                  to any layout. Medium-sized Input Module.
+                </p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-input-modules"
+              id="choice-input-modules-3"
+            />
+            <label for="choice-input-modules-3" class="choice-content">
+              <div class="choice-content-title">
+                <p>RGB Color Module</p>
+                <p>$ 49</p>
+              </div>
+              <hr />
+              <div class="choice-content-body">
+                <p>
+                  Clear keys with a RGB backlight. 1.5mm key travel and NKRO
+                  support. Use hotkeys or QMK utilities to cycle through
+                  lighting effects. Runs QMK firmware, enabling you to configure
+                  to any layout. Medium-sized Input Module.
+                </p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="configure-subcontent bezel" id="bezel">
+          <h1>Bezel</h1>
+          <hr />
+          <div class="choice">
+            <input type="radio" name="choice-bezel" id="choice-bezel-1" />
+            <label for="choice-bezel-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>Black</p>
+                <p>$ 10</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice-bezel" id="choice-bezel-2" />
+            <label for="choice-bezel-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>Orange</p>
+                <p>$ 20</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input type="radio" name="choice-bezel" id="choice-bezel-3" />
+            <label for="choice-bezel-3" class="choice-content">
+              <div class="choice-content-title">
+                <p>Lavender</p>
+                <p>$ 20</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="configure-content">
+        <h1 class="configure-content-title">Expansion Cards</h1>
+        <div class="configure-subcontent expansion-cards" id="expansion-cards">
+          <h1>Expanion Cards</h1>
+          <hr />
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-expansion-cards"
+              id="choice-expansion-cards-1"
+            />
+            <label for="choice-expansion-cards-1" class="choice-content">
+              <div class="choice-content-title">
+                <p>USB-C</p>
+                <p>$ 9</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-expansion-cards"
+              id="choice-expansion-cards-2"
+            />
+            <label for="choice-expansion-cards-2" class="choice-content">
+              <div class="choice-content-title">
+                <p>USB-A</p>
+                <p>$ 9</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-expansion-cards"
+              id="choice-expansion-cards-3"
+            />
+            <label for="choice-expansion-cards-3" class="choice-content">
+              <div class="choice-content-title">
+                <p>HDMI</p>
+                <p>$ 9</p>
+              </div>
+            </label>
+          </div>
+
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-expansion-cards"
+              id="choice-expansion-cards-4"
+            />
+            <label for="choice-expansion-cards-4" class="choice-content">
+              <div class="choice-content-title">
+                <p>Ethernet</p>
+                <p>$ 9</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-expansion-cards"
+              id="choice-expansion-cards-5"
+            />
+            <label for="choice-expansion-cards-5" class="choice-content">
+              <div class="choice-content-title">
+                <p>Display Port</p>
+                <p>$ 9</p>
+              </div>
+            </label>
+          </div>
+          <div class="choice">
+            <input
+              type="radio"
+              name="choice-expansion-cards"
+              id="choice-expansion-cards-6"
+            />
+            <label for="choice-expansion-cards-6" class="choice-content">
+              <div class="choice-content-title">
+                <p>Micro SD</p>
+                <p>$ 9</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

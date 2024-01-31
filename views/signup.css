@@ -1,0 +1,247 @@
+:root {
+  --gradient: linear-gradient(
+    45deg,
+    white 0%,
+    rgb(255, 138, 80) 40%,
+    rgb(1, 171, 209) 100%
+  );
+  --logoGradient: linear-gradient(
+    45deg,
+    #ffffff 0%,
+    #32bd07 20%,
+    #c7c136 40%,
+    #d22828 60%,
+    #963d97 80%,
+    #1ebbea 100%
+  );
+  --textGradient: linear-gradient(
+    71deg,
+    rgba(199, 193, 54, 1) 4%,
+    rgba(210, 40, 40, 1) 38%,
+    rgba(175, 52, 105, 1) 75%,
+    rgba(175, 52, 105, 1) 75%,
+    rgba(30, 187, 234, 1) 100%
+  );
+  --buyGradient: linear-gradient(
+    90deg,
+    rgba(69, 25, 82, 1) 0%,
+    rgba(128, 13, 76, 1) 30%,
+    rgba(249, 32, 77, 1) 60%,
+    rgba(255, 115, 0, 1) 100%
+  );
+
+  --parFont: "JetBrains Mono", monospace;
+  --headFont: "Zilla Slab", serif;
+  --logoFont: "MuseoModerno", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-family: var(--headFont);
+}
+
+p,
+a {
+  color: white;
+  font-family: var(--parFont);
+}
+
+input {
+  font-family: var(--parFont);
+}
+
+.nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 4rem;
+
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.logo > h1 {
+  font-size: 2rem;
+  color: white;
+  margin-left: 2rem;
+  font-family: var(--logoFont);
+}
+
+.navBar {
+  display: flex;
+  width: 40rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  margin-left: 2rem;
+}
+
+.navBar .button {
+  background-color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navBar .button img {
+  filter: invert(1);
+  width: 2rem;
+}
+
+.navBar .button:hover {
+  background: rgb(244, 97, 23);
+  background: var(--gradient);
+  background-size: 700%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: smooth-text 0.4s ease-in-out forwards;
+}
+
+/* Sign In */
+
+.signup {
+  display: flex;
+  width: fit-content;
+  margin: 1rem auto 0rem auto;
+  padding: 1rem;
+  background-color: rgb(113, 113, 113);
+}
+
+.signup-box {
+  width: 25rem;
+  background-color: rgba(8, 8, 8, 0.799);
+  padding-bottom: 1rem;
+}
+
+.signup-image {
+  width: 30rem;
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+.signup-image > img {
+  width: 20rem;
+}
+
+.signup-title {
+  width: fit-content;
+  margin: 3rem auto 1rem auto;
+  font-size: 2rem;
+}
+
+.signup-content {
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.signup-content > p {
+  padding: 0.2rem;
+}
+
+.signup-content input {
+  width: 20rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 1%;
+}
+
+.signup-button {
+  width: 15rem;
+  height: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.signup-button > p {
+  color: black;
+}
+
+.google-button {
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10rem;
+
+  cursor: pointer;
+}
+
+.google-icon {
+  width: 3rem;
+}
+
+.google-button > p {
+  color: black;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.signup-section {
+  width: 20rem;
+  margin: 2rem auto;
+}
+
+.signup-section > p {
+  margin: 1rem auto;
+}
+
+.signup-section a {
+  text-decoration: underline;
+}
+
+.wrong-credentials {
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  align-items: center;
+  justify-content: space-around;
+  inset: 7rem 0 auto 0;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: black;
+  border: 0.05rem white solid;
+  border-radius: 0.2rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.wrong-credentials-close-button {
+  margin-left: 0.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes smooth-text {
+  0% {
+    background-size: 700%;
+  }
+  20% {
+    background-size: 400%;
+  }
+  40% {
+    background-size: 200%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
