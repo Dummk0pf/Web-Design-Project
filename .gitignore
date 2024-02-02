@@ -1,0 +1,4 @@
+node_modules/*
+dataDump/*
+.eslintrc.json
+.prettierrc
