@@ -4,7 +4,8 @@
     "description": "Product Landing Page",
     "main": "app.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "nodemon app.js",
+        "debug": "ndb app.js"
     },
     "repository": {
         "type": "git",
@@ -31,6 +32,6 @@
     "dependencies": {
         "dotenv": "^16.4.1",
         "express": "^4.18.2",
-        "mongoose": "^5.13.22"
+        "mongoose": "^8.1.1"
     }
 }
